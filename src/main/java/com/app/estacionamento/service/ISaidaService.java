@@ -9,10 +9,10 @@ public interface ISaidaService {
 
     Saida create(SaidaForm form);
 
-    Saida get(int id);
+    Saida get(Integer id);
 
     List<Saida> list();
 
-    void delete(int id);
+    void delete(Integer id);
 
 }

@@ -16,7 +16,7 @@ public class Saida {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "entrada_id")
