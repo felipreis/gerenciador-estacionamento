@@ -25,7 +25,7 @@ public class CarroService implements ICarroService {
     }
 
     @Override
-    public Carro get(int id) {
+    public Carro get(Integer id) {
         return null;
     }
 
@@ -36,7 +36,7 @@ public class CarroService implements ICarroService {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(Integer id) {
 
     }
 }
