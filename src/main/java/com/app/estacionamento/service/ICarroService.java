@@ -9,9 +9,10 @@ public interface ICarroService {
 
     Carro create(CarroForm form);
 
-    Carro get(int id);
+    Carro get(Integer id);
 
     List<Carro> getAll();
 
-    void delete(int id);
+    void delete(Integer
+                        id);
 }
