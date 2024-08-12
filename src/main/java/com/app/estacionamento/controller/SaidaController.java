@@ -29,4 +29,9 @@ public class SaidaController {
     public Saida get(@PathVariable Integer id){
         return saidaService.get(id);
     }
+
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable("id") Integer id){
+         saidaService.delete(id);
+    }
 }

@@ -42,6 +42,6 @@ public class SaidaService implements ISaidaService {
 
     @Override
     public void delete(Integer id) {
-
+        saidaRepository.deleteById(id);
     }
 }
