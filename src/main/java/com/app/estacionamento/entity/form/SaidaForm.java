@@ -14,7 +14,5 @@ public class SaidaForm {
 
     private Integer entradaId;
 
-    private Double valor;
-
     private String formaPagamento;
 }

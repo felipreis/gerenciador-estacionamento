@@ -26,7 +26,6 @@ public class SaidaService implements ISaidaService {
         Entrada entrada = entradaRepository.findById(form.getEntradaId()).get();
         saida.setEntrada(entrada);
         saida.setFormaPagamento(form.getFormaPagamento());
-        saida.setValor(form.getValor());
         return saidaRepository.save(saida);
     }
 

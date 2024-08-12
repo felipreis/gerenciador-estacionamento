@@ -1,5 +1,6 @@
 package com.app.estacionamento.entity;
 
+import com.app.estacionamento.timeutils.TimeUtils;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,4 +29,10 @@ public class Saida {
 
     private String formaPagamento;
 
+    @PostLoad
+    private void initialize() {
+        if (entrada != null && horaSaida != null) {
+            this.valor = TimeUtils.valorPagamento(entrada.getHoraEntrada(), this.horaSaida);
+        }
+    }
 }
