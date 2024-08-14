@@ -12,6 +12,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class EntradaForm {
 
-    private int carroId;
+    private Integer carroId;
 
 }
