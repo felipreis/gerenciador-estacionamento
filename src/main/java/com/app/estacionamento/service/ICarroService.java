@@ -11,8 +11,9 @@ public interface ICarroService {
 
     Carro get(Integer id);
 
+    Carro getPlaca(String placa);
+
     List<Carro> getAll();
 
-    void delete(Integer
-                        id);
+    void delete(Integer id);
 }

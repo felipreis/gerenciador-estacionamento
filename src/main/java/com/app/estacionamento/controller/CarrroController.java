@@ -21,6 +21,13 @@ public class CarrroController {
         return carroService.getAll();
     }
 
+
+    @GetMapping("/placa/{placa}")
+    public Carro getPlaca(@PathVariable String placa){
+        return carroService.getPlaca(placa);
+    }
+
+
     @PostMapping
     public Carro create(@RequestBody CarroForm form){
         return carroService.create(form);

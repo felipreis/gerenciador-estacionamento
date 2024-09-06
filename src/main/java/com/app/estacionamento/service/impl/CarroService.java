@@ -30,6 +30,12 @@ public class CarroService implements ICarroService {
     }
 
     @Override
+    public Carro getPlaca(String placa) {
+        return repository.findByPlaca(placa);
+    }
+
+
+    @Override
     public List<Carro> getAll() {
        return repository.findAll();
 
