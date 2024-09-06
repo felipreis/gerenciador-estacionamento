@@ -11,6 +11,8 @@ public interface ISaidaService {
 
     Saida get(Integer id);
 
+    List<Saida> findSaidaByPlaca(String placa);
+
     List<Saida> list();
 
     void delete(Integer id);

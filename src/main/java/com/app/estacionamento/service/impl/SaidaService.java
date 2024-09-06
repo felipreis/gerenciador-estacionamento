@@ -35,6 +35,11 @@ public class SaidaService implements ISaidaService {
     }
 
     @Override
+    public List<Saida> findSaidaByPlaca(String placa) {
+        return saidaRepository.findByCarroPlaca(placa);
+    }
+
+    @Override
     public List<Saida> list() {
         return saidaRepository.findAll();
     }

@@ -34,4 +34,9 @@ public class SaidaController {
     public void delete(@PathVariable("id") Integer id){
          saidaService.delete(id);
     }
+
+    @GetMapping("/carro/placa/{placa}")
+    public List<Saida> buscarPorPlacaDoCarro(@PathVariable String placa) {
+        return saidaService.findSaidaByPlaca(placa);
+    }
 }
