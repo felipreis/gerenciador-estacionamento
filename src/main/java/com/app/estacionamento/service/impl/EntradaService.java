@@ -33,5 +33,10 @@ public class EntradaService implements IEntradaService {
         return entradaRepository.findAll();
     }
 
+    @Override
+    public List<Entrada> findByPlacaCarro(String placa) {
+        return entradaRepository.findByCarroPlaca(placa);
+    }
+
 
 }

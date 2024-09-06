@@ -26,6 +26,11 @@ public class EntradaController {
         return entradaService.getAll();
     }
 
+    @GetMapping("/carro/placa/{placa}")
+    public List<Entrada> buscarPorPlacaDoCarro(@PathVariable String placa) {
+        return entradaService.findByPlacaCarro(placa);
+    }
+
 
 
 

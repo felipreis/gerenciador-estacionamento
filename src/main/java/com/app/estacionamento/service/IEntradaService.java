@@ -11,4 +11,6 @@ public interface IEntradaService {
 
     List<Entrada> getAll();
 
+    List<Entrada> findByPlacaCarro(String placa);
+
 }
